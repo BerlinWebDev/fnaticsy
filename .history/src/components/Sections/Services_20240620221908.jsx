@@ -36,7 +36,8 @@ export default function Services() {
               <ServiceBox
                 icon="monitor"
                 title="Web Design"
-                subtitle="Wir entwickeln moderne, benutzerfreundliche Websites, die sowohl ästhetisch ansprechend als auch funktional sind. Mit einem Fokus auf responsives Design und intuitive Benutzerführung stellen wir sicher, dass die Online-Präsenz unserer Kunden auf allen Geräten optimal dargestellt wird."
+                subtitle="
+Wir entwickeln moderne, benutzerfreundliche Websites, die sowohl ästhetisch ansprechend als auch funktional sind. Mit einem Fokus auf responsives Design und intuitive Benutzerführung stellen wir sicher, dass die Online-Präsenz unserer Kunden auf allen Geräten optimal dargestellt wird."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
@@ -116,7 +117,7 @@ const ServiceBoxRow = styled.div`
   }
 `;
 const ServiceBoxWrapper = styled.div`
-  width: 33%;
+  width: 40%;
   margin-right: 5%;
   padding: 80px 0;
   @media (max-width: 860px) {

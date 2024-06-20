@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
+// Assets
+import HeaderImage from "../../assets/img/header-img.png";
 import Human from "../../assets/img/hero.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
@@ -44,7 +46,7 @@ export default function Header() {
               <p className="font15 whiteColor">
                 <em>
                   Das Internet ist wie eine Welle: Entweder man lernt, auf ihr
-                  zu schwimmen, oder man geht unter.
+                  zu schwimmen, oder man geht unter
                 </em>
               </p>
               <p

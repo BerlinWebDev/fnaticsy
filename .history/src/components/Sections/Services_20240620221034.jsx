@@ -29,21 +29,21 @@ export default function Services() {
               <ServiceBox
                 icon="roller"
                 title="Grafikdesign"
-                subtitle="Unser Grafikdesign-Team erstellt ansprechende visuelle Inhalte, die die Markenidentität unserer Kunden stärken. Durch kreative und innovative Designlösungen sorgen wir dafür, dass die Botschaften unserer Kunden effektiv und visuell überzeugend vermittelt werden."
+                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
                 title="Web Design"
-                subtitle="Wir entwickeln moderne, benutzerfreundliche Websites, die sowohl ästhetisch ansprechend als auch funktional sind. Mit einem Fokus auf responsives Design und intuitive Benutzerführung stellen wir sicher, dass die Online-Präsenz unserer Kunden auf allen Geräten optimal dargestellt wird."
+                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Entwicklung"
-                subtitle="Wir bieten maßgeschneiderte Entwicklungsdienstleistungen an, die auf die spezifischen Bedürfnisse unserer Kunden zugeschnitten sind. Durch den Einsatz modernster Technologien und bewährter Methoden stellen wir sicher, dass unsere Lösungen effizient, skalierbar und zukunftssicher sind."
+                title="Development"
+                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
               />
             </ServiceBoxWrapper>
           </ServiceBoxRow>

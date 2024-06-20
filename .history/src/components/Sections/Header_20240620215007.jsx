@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
+// Assets
+import HeaderImage from "../../assets/img/header-img.png";
 import Human from "../../assets/img/hero.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
@@ -11,7 +13,7 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Wir sind eine Digitale Agentur.</h1>
+          <h1 className="extraBold font60">Wir sind eine Digitale Ageetur.</h1>
           <HeaderP className="font13 semiBold">
             Als digitale Agentur sind wir darauf spezialisiert, maßgeschneiderte
             digitale Lösungen für unsere Kunden zu entwickeln. Unser
@@ -44,7 +46,7 @@ export default function Header() {
               <p className="font15 whiteColor">
                 <em>
                   Das Internet ist wie eine Welle: Entweder man lernt, auf ihr
-                  zu schwimmen, oder man geht unter.
+                  zu schwimmen, oder man geht unter
                 </em>
               </p>
               <p

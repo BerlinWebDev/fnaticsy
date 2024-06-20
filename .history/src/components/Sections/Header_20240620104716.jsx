@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
-import Human from "../../assets/img/hero.png";
+// Assets
+import HeaderImage from "../../assets/img/header-img.png";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 
@@ -11,17 +12,10 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Wir sind eine Digitale Agentur.</h1>
+          <h1 className="extraBold font60">We are Digital Agency.</h1>
           <HeaderP className="font13 semiBold">
-            Als digitale Agentur sind wir darauf spezialisiert, maßgeschneiderte
-            digitale Lösungen für unsere Kunden zu entwickeln. Unser
-            Leistungsspektrum umfasst Webdesign, Content-Erstellung und die
-            Entwicklung benutzerfreundlicher Apps. Unser Ziel ist es, durch den
-            Einsatz modernster Technologien und kreativer Ansätze die
-            Online-Präsenz unserer Kunden zu maximieren. Mit unserem erfahrenen
-            Team sorgen wir dafür, dass jede Lösung individuell auf die
-            Bedürfnisse und Ziele unserer Kunden abgestimmt ist, um nachhaltigen
-            Erfolg zu gewährleisten
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
           </HeaderP>
           <BtnWrapper>
             <FullButton title="Get Started" />
@@ -30,29 +24,16 @@ export default function Header() {
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-          <Img
-            className="radius8"
-            src={Human}
-            alt="office"
-            style={{ zIndex: 9 }}
-          />
+          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
           <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>
-                  Das Internet ist wie eine Welle: Entweder man lernt, auf ihr
-                  zu schwimmen, oder man geht unter.
-                </em>
+                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
               </p>
-              <p
-                className="font13 orangeColor textRight"
-                style={{ marginTop: "10px" }}
-              >
-                Bill Gates
-              </p>
+              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
@@ -64,6 +45,7 @@ export default function Header() {
     </Wrapper>
   );
 }
+
 
 const Wrapper = styled.section`
   padding-top: 80px;
@@ -169,3 +151,5 @@ const DotsWrapper = styled.div`
     display: none;
   }
 `;
+
+
