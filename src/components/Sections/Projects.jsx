@@ -43,6 +43,7 @@ export default function Projects() {
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectGamehub}
+                style={{ height: "465px", width: "265px" }}
                 title="Gamehub - die Spiele-Bibliothek"
                 text="Die Seite Game Hub ist eine moderne Plattform für Gamer, die mit Vite und React entwickelt wurde. Sie bietet eine übersichtliche und benutzerfreundliche Oberfläche, auf der Nutzer eine breite Auswahl an Spielen durchsuchen können. Jedes Spiel wird mit einem ansprechenden Bild und grundlegenden Informationen dargestellt. Die Seite lädt schnell und reagiert flüssig auf Benutzerinteraktionen. Das klare, zeitgemäße Design sorgt für ein angenehmes Benutzererlebnis und macht es einfach, neue Spiele zu entdecken und Details zu bereits bekannten Titeln zu finden. Des Weiteren kann der Besucher die Seite in den Darkmode umschalten."
                 action={() => alert("clicked")}

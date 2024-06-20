@@ -5,6 +5,10 @@ import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
 
+import EmailBaum from "../../assets/img/emailbaum.png";
+import EmailLaptop from "../../assets/img/emaillaptop.png";
+import EmailBlueten from "../../assets/img/emailblueten.png";
+
 export default function Contact() {
   return (
     <Wrapper id="contact">
@@ -65,20 +69,20 @@ export default function Contact() {
               </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div
-                style={{ width: "50%" }}
-                className="flexNullCenter flexColumn"
-              >
-                <ContactImgBox>
-                  <img src={ContactImg1} alt="office" className="radius6" />
-                </ContactImgBox>
-                <ContactImgBox>
-                  <img src={ContactImg2} alt="office" className="radius6" />
-                </ContactImgBox>
-              </div>
               <div style={{ width: "50%" }}>
                 <div style={{ marginTop: "100px" }}>
-                  <img src={ContactImg3} alt="office" className="radius6" />
+                  <img
+                    src={EmailLaptop}
+                    alt="office"
+                    className="radius6"
+                    style={{
+                      height: "430px",
+                      width: "400px",
+                      marginLeft: "100px",
+
+                      borderRadius: "8px",
+                    }}
+                  />
                 </div>
               </div>
             </div>
