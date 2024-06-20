@@ -10,6 +10,11 @@ import AddImage2 from "../../assets/img/add/2.png";
 import AddImage3 from "../../assets/img/add/3.png";
 import AddImage4 from "../../assets/img/add/4.png";
 
+import LaptopMitBaum from "../../assets/img/add/laptopbaum.png";
+import Chatbot from "../../assets/img/add/chatbot.png";
+import Mentalify from "../../assets/img/add/mentalify.png";
+import NextCommerce from "../../assets/img/add/nextcommerce.png";
+
 export default function Services() {
   return (
     <Wrapper id="services">
@@ -52,13 +57,19 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
+                <h4 className="font15 semiBold">Ziele & Vision</h4>
+                <h2 className="font40 extraBold">Ein paar Worte über uns..</h2>
                 <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum.
+                  Unsere digitale Agentur steht für innovative Lösungen und
+                  herausragende Kreativität. Wir helfen Unternehmen, ihre
+                  Online-Präsenz zu maximieren und ihre Zielgruppen effektiv zu
+                  erreichen. Mit unserem erfahrenen Team aus Designern,
+                  Entwicklern und Marketingexperten setzen wir maßgeschneiderte
+                  Strategien um, die zu messbaren Ergebnissen führen. Vertrauen
+                  Sie auf unsere Expertise und lassen Sie uns gemeinsam Ihre
+                  digitalen Ziele verwirklichen. Erleben Sie, wie wir Ihre
+                  Vision in die digitale Realität umsetzen und Ihren Erfolg
+                  nachhaltig steigern.
                 </p>
                 <ButtonsRow
                   className="flexNullCenter"
@@ -83,18 +94,18 @@ export default function Services() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} alt="office" />
+                      <img src={LaptopMitBaum} alt="office" />
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <img src={Chatbot} alt="office" />
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
+                      <img src={Mentalify} alt="office" />
                     </AddImgWrapp3>
                     <AddImgWrapp4>
-                      <img src={AddImage4} alt="office" />
+                      <img src={NextCommerce} alt="office" />
                     </AddImgWrapp4>
                   </div>
                 </AddRightInner>

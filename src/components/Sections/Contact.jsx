@@ -11,30 +11,64 @@ export default function Contact() {
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Let's get in touch</h1>
+            <h1 className="font40 extraBold">Kontaktiere Sie Uns Jetzt!</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Schicken Sie uns eine Nachricht und wir werden uns so schnell wie
+              möglich bei Ihnen melden.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Wir freuen uns darauf, von Ihnen zu hören!
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
-                <label className="font13">First name:</label>
-                <input type="text" id="fname" name="fname" className="font20 extraBold" />
+                <label className="font13">
+                  Name (Person oder Unternehmen):
+                </label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  className="font20 extraBold"
+                />
                 <label className="font13">Email:</label>
-                <input type="text" id="email" name="email" className="font20 extraBold" />
-                <label className="font13">Subject:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
-                <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Betreff:</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Nachricht</label>
+                <textarea
+                  rows="4"
+                  cols="50"
+                  type="text"
+                  id="message"
+                  name="message"
+                  className="font20 extraBold"
+                />
               </Form>
               <SumbitWrapper className="flex">
-                <ButtonInput type="submit" value="Send Message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
+                <ButtonInput
+                  type="submit"
+                  value="Absenden"
+                  className="pointer animate radius8"
+                  style={{ maxWidth: "220px" }}
+                />
               </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
+              <div
+                style={{ width: "50%" }}
+                className="flexNullCenter flexColumn"
+              >
                 <ContactImgBox>
                   <img src={ContactImg1} alt="office" className="radius6" />
                 </ContactImgBox>
@@ -101,8 +135,8 @@ const ButtonInput = styled.input`
   }
 `;
 const ContactImgBox = styled.div`
-  max-width: 180px; 
-  align-self: flex-end; 
+  max-width: 180px;
+  align-self: flex-end;
   margin: 10px 30px 10px 0;
 `;
 const SumbitWrapper = styled.div`
@@ -111,12 +145,3 @@ const SumbitWrapper = styled.div`
     margin-bottom: 50px;
   }
 `;
-
-
-
-
-
-
-
-
-

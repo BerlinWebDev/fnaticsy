@@ -2,15 +2,13 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
-import FullButton from "../Buttons/FullButton";
 // Assets
-import ProjectImg1 from "../../assets/img/projects/1.png";
-import ProjectImg2 from "../../assets/img/projects/2.png";
-import ProjectImg3 from "../../assets/img/projects/3.png";
-import ProjectImg4 from "../../assets/img/projects/4.png";
-import ProjectImg5 from "../../assets/img/projects/5.png";
+import ProjectLoso from "../../assets/img/projects/loso.png";
+import ProjectDigitalMedia from "../../assets/img/projects/digitalmedia.png";
+import ProjectGamehub from "../../assets/img/projects/gamehub.png";
+import ProjectNetflix from "../../assets/img/projects/netflix.png";
+import ProjectTagesmieten from "../../assets/img/projects/tagesmieten.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
-import AddImage2 from "../../assets/img/add/add2.png";
 
 export default function Projects() {
   return (
@@ -18,35 +16,35 @@ export default function Projects() {
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Projects</h1>
+            <h1 className="font40 extraBold">Einige Projekte</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Hier sind einige unserer Projekte aus der Vergangenheit zu finden.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Bei einigen wurden die Inhalte geändert.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg1}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                img={ProjectLoso}
+                title="Loso - App Website"
+                text="Die Seite Loso ist eine moderne, saubere und responsive Website. Sie bietet detaillierte Informationen über die Agentur, ihre Dienstleistungen und ihre Vorteile. Die Seite ist in verschiedene Abschnitte unterteilt, wie “Über uns”, “Warum wir?”, “Funktionen” und “Screens”, die die Hauptmerkmale und Vorzüge der Agentur präsentieren. Testimonials von zufriedenen Kunden sowie Download-Links sind ebenfalls verfügbar, um das Vertrauen der Besucher zu stärken und die Benutzerfreundlichkeit zu erhöhen. Hierbei wurde die Seite auf Rücksicht des Kunden inhaltlich geändert."
                 action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg2}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                img={ProjectDigitalMedia}
+                title="Digital Media"
+                text="Präsenz einer beispielhaften Agency Agentur mit besonderen Fokus auf die Präsentation der Dienstleistungen und der Teammitglieder. Die Seite ist in verschiedene Abschnitte unterteilt, die die Hauptmerkmale und Vorzüge der Agentur präsentieren. Testimonials von zufriedenen Kunden sowie Download-Links sind ebenfalls verfügbar, um das Vertrauen der Besucher zu stärken und die Benutzerfreundlichkeit zu erhöhen."
                 action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg3}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                img={ProjectGamehub}
+                title="Gamehub - die Spiele-Bibliothek"
+                text="Die Seite Game Hub ist eine moderne Plattform für Gamer, die mit Vite und React entwickelt wurde. Sie bietet eine übersichtliche und benutzerfreundliche Oberfläche, auf der Nutzer eine breite Auswahl an Spielen durchsuchen können. Jedes Spiel wird mit einem ansprechenden Bild und grundlegenden Informationen dargestellt. Die Seite lädt schnell und reagiert flüssig auf Benutzerinteraktionen. Das klare, zeitgemäße Design sorgt für ein angenehmes Benutzererlebnis und macht es einfach, neue Spiele zu entdecken und Details zu bereits bekannten Titeln zu finden. Des Weiteren kann der Besucher die Seite in den Darkmode umschalten."
                 action={() => alert("clicked")}
               />
             </div>
@@ -54,17 +52,17 @@ export default function Projects() {
           <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg4}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                img={ProjectNetflix}
+                title="Netflix-Klon"
+                text="Die Seite ist eine Nachbildung der Netflix-Benutzeroberfläche, erstellt mit React. Sie bietet eine übersichtliche Darstellung von Filmen und Serien, organisiert in verschiedenen Kategorien. Benutzer können durch die Inhalte scrollen und erhalten eine visuelle Vorschau von Titeln. Die Seite besticht durch ein modernes, ansprechendes Design und eine benutzerfreundliche Navigation, ähnlich dem Original-Netflix-Interface. Zusätzlich kann eine Account erstellt um beliebte Titel zu speichern. Die Netflix Clone Seite bietet ein unterhaltsames und interaktives Erlebnis für Film- und Serienliebhaber."
                 action={() => alert("clicked")}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg5}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+                img={ProjectTagesmieten}
+                title="Tagesmieten - Verwaltung von Mietobjekten"
+                text="Tagesmieten.de ist eine deutsche Webseite, die sich auf die Verwaltung von Mietwohnungen auf Tagesbasis spezialisiert hat. Die Plattform ermöglicht es Vermietern das ganze zu verwalten. Hierbei wurde auch das ganze Backend entwickelt mit all ihren Funktionalitäten, wie das Anlegen von Mietern, Mietobjekten oder das Generieren von Rechnungen."
                 action={() => alert("clicked")}
               />
             </div>
@@ -78,39 +76,8 @@ export default function Projects() {
             </div>
           </div>
           <div className="row flexCenter">
-            <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Load More" action={() => alert("clicked")} />
-            </div>
+            <div style={{ margin: "50px 0", width: "200px" }}></div>
           </div>
-        </div>
-      </div>
-      <div className="lightBg">
-        <div className="container">
-          <Advertising className="flexSpaceCenter">
-            <AddLeft>
-              <AddLeftInner>
-                <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage2} alt="add" />
-                </ImgWrapper>
-              </AddLeftInner>
-            </AddLeft>
-            <AddRight>
-              <h4 className="font15 semiBold">A few words about company</h4>
-              <h2 className="font40 extraBold">A Study of Creativity</h2>
-              <p className="font12">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              </p>
-              <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
-                <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
-                </div>
-                <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                </div>
-              </ButtonsRow>
-            </AddRight>
-          </Advertising>
         </div>
       </div>
     </Wrapper>
@@ -123,78 +90,5 @@ const Wrapper = styled.section`
 const HeaderInfo = styled.div`
   @media (max-width: 860px) {
     text-align: center;
-  }
-`;
-const Advertising = styled.div`
-  padding: 100px 0;
-  margin: 100px 0;
-  position: relative;
-  @media (max-width: 1160px) {
-    padding: 60px 0 40px 0;
-  }
-  @media (max-width: 860px) {
-    flex-direction: column;
-    padding: 0 0 30px 0;
-    margin: 80px 0 0px 0;
-  }
-`;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
-`;
-const AddLeft = styled.div`
-  position: relative;
-  width: 50%;
-  p {
-    max-width: 475px;
-  }
-  @media (max-width: 860px) {
-    width: 80%;
-    order: 2;
-    text-align: center;
-    h2 {
-      line-height: 3rem;
-      margin: 15px 0;
-    }
-    p {
-      margin: 0 auto;
-    }
-  }
-`;
-const AddRight = styled.div`
-  width: 50%;
-  @media (max-width: 860px) {
-    width: 80%;
-    order: 2;
-  }
-`;
-const AddLeftInner = styled.div`
-  width: 100%;
-  position: absolute;
-  top: -300px;
-  left: 0;
-  @media (max-width: 1190px) {
-    top: -250px;
-  }
-  @media (max-width: 920px) {
-    top: -200px;
-  }
-  @media (max-width: 860px) {
-    order: 1;
-    position: relative;
-    top: -60px;
-    left: 0;
-  }
-`;
-const ImgWrapper = styled.div`
-  width: 100%;
-  padding: 0 15%;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  @media (max-width: 400px) {
-    padding: 0;
   }
 `;
