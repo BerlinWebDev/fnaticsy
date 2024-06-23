@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import emailjs from "@emailjs/browser";
 // Assets
 import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
@@ -9,9 +8,10 @@ import ContactImg3 from "../../assets/img/contact-3.png";
 import EmailBaum from "../../assets/img/emailbaum.png";
 import EmailLaptop from "../../assets/img/emaillaptop.png";
 import EmailBlueten from "../../assets/img/emailblueten.png";
-import { useRef, useState } from "react";
 
 export default function Contact() {
+
+  const Contact = () => {
   const form = useRef();
   const ref = useRef();
   const [error, setError] = useState(false);
@@ -19,15 +19,15 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form);
 
     emailjs
       .sendForm(
-        process.env.VITE_EMAIL_SERVICE_ID,
-        process.env.VITE_EMAIL_TEMPLATE_ID,
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
         form.current,
+
         {
-          publicKey: process.env.VITE_EMAIL_PUBLIC_KEY,
+          publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
         }
       )
       .then(
@@ -38,7 +38,11 @@ export default function Contact() {
           setError(true);
         }
       );
-  };
+  };  
+
+
+
+
 
   return (
     <Wrapper id="contact">
@@ -55,53 +59,48 @@ export default function Contact() {
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <form ref={form} onSubmit={sendEmail}>
-                <Form>
-                  {error &&
-                    "There was an error sending your message! Please try again."}
-                  {success && "Your Message was delivered successfully!"}
-                  <label className="font13">
-                    Name (Person oder Unternehmen):
-                  </label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    className="font20 extraBold"
-                  />
-                  <label className="font13">Email:</label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    className="font20 extraBold"
-                  />
-                  <label className="font13">Betreff:</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    className="font20 extraBold"
-                  />
-                  <label className="font13">Nachricht</label>
-                  <textarea
-                    rows="4"
-                    cols="50"
-                    type="text"
-                    id="message"
-                    name="message"
-                    className="font20 extraBold"
-                  />
-                </Form>
-                <SumbitWrapper className="flex">
-                  <ButtonInput
-                    type="submit"
-                    value="Absenden"
-                    className="pointer animate radius8"
-                    style={{ maxWidth: "220px" }}
-                  />
-                </SumbitWrapper>
-              </form>
+              <Form ref={form} onSubmit={sendEmail}>
+                <label className="font13">
+                  Name (Person oder Unternehmen):
+                </label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Betreff:</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Nachricht</label>
+                <textarea
+                  rows="4"
+                  cols="50"
+                  type="text"
+                  id="message"
+                  name="message"
+                  className="font20 extraBold"
+                />
+              </Form>
+              <SumbitWrapper className="flex">
+                <ButtonInput
+                  type="submit"
+                  value="Absenden"
+                  className="pointer animate radius8"
+                  style={{ maxWidth: "220px" }}
+                />
+              </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <div style={{ width: "50%" }}>

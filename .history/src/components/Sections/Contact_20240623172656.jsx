@@ -19,15 +19,15 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form);
+    console.log(e);
 
     emailjs
       .sendForm(
-        process.env.VITE_EMAIL_SERVICE_ID,
-        process.env.VITE_EMAIL_TEMPLATE_ID,
+        meta.env.VITE_EMAIL_SERVICE_ID,
+        meta.env.VITE_EMAIL_TEMPLATE_ID,
         form.current,
         {
-          publicKey: process.env.VITE_EMAIL_PUBLIC_KEY,
+          publicKey: meta.env.VITE_EMAIL_PUBLIC_KEY,
         }
       )
       .then(

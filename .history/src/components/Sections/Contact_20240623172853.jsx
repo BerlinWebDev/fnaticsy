@@ -19,7 +19,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form);
+    console.log(e);
 
     emailjs
       .sendForm(

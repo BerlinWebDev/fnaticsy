@@ -19,7 +19,6 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form);
 
     emailjs
       .sendForm(
@@ -34,7 +33,7 @@ export default function Contact() {
         () => {
           setSuccess(true);
         },
-        () => {
+        (e) => {
           setError(true);
         }
       );

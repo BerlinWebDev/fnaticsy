@@ -19,7 +19,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form);
+    console.log(e);
 
     emailjs
       .sendForm(
@@ -57,8 +57,7 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <form ref={form} onSubmit={sendEmail}>
                 <Form>
-                  {error &&
-                    "There was an error sending your message! Please try again."}
+                  {error && error}
                   {success && "Your Message was delivered successfully!"}
                   <label className="font13">
                     Name (Person oder Unternehmen):
