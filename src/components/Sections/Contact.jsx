@@ -1,17 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
+import "./Contact.css";
 // Assets
-import ContactImg1 from "../../assets/img/contact-1.png";
-import ContactImg2 from "../../assets/img/contact-2.png";
-import ContactImg3 from "../../assets/img/contact-3.png";
-
-import EmailBaum from "../../assets/img/emailbaum.png";
 import EmailLaptop from "../../assets/img/emaillaptop.png";
-import EmailBlueten from "../../assets/img/emailblueten.png";
 import { useRef, useState } from "react";
 
 export default function Contact() {
+  const [emailvalidation, setEmailvalidation] = useState("");
   const form = useRef();
   const ref = useRef();
   const [error, setError] = useState(false);
@@ -19,23 +15,62 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form);
+    setSuccess(false);
+    setError(false);
+    console.log(form.current.email.value);
+    if (
+      !form.current.email.value.includes("@") ||
+      !form.current.email.value.includes(".") ||
+      form.current.email.value.length < 5 ||
+      form.current.email.value.length > 50 ||
+      form.current.email.value === ""
+    ) {
+      setEmailvalidation("Bitte geben Sie eine gültige E-Mail-Adresse ein!");
+      return;
+    }
+    if (
+      form.current.fname.value.length < 3 ||
+      form.current.fname.value.length > 50 ||
+      form.current.fname.value === ""
+    ) {
+      setEmailvalidation("Bitte geben Sie einen gültigen Namen ein!");
+      return;
+    }
+    if (
+      form.current.subject.value.length < 3 ||
+      form.current.subject.value.length > 50 ||
+      form.current.subject.value === ""
+    ) {
+      setEmailvalidation("Bitte geben Sie einen gültigen Betreff ein!");
+      return;
+    }
+    if (
+      form.current.message.value.length < 3 ||
+      form.current.message.value.length > 500 ||
+      form.current.message.value === ""
+    ) {
+      setEmailvalidation("Bitte geben Sie eine gültige Nachricht ein!");
+      return;
+    }
+    setEmailvalidation("");
 
     emailjs
       .sendForm(
-        process.env.VITE_EMAIL_SERVICE_ID,
-        process.env.VITE_EMAIL_TEMPLATE_ID,
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
         form.current,
         {
-          publicKey: process.env.VITE_EMAIL_PUBLIC_KEY,
+          publicKey: process.env.REACT_APP_EMAIL_PUBLIC_KEY,
         }
       )
       .then(
         () => {
           setSuccess(true);
+          setError(false);
         },
         () => {
           setError(true);
+          setSuccess(false);
         }
       );
   };
@@ -45,7 +80,7 @@ export default function Contact() {
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Kontaktiere Sie Uns Jetzt!</h1>
+            <h1 className="font40 extraBold">Kontaktieren Sie Uns Jetzt!</h1>
             <p className="font13">
               Schicken Sie uns eine Nachricht und wir werden uns so schnell wie
               möglich bei Ihnen melden.
@@ -56,43 +91,50 @@ export default function Contact() {
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <form ref={form} onSubmit={sendEmail}>
-                <Form>
-                  {error &&
-                    "There was an error sending your message! Please try again."}
-                  {success && "Your Message was delivered successfully!"}
-                  <label className="font13">
-                    Name (Person oder Unternehmen):
-                  </label>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    className="font20 extraBold"
-                  />
-                  <label className="font13">Email:</label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    className="font20 extraBold"
-                  />
-                  <label className="font13">Betreff:</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    className="font20 extraBold"
-                  />
-                  <label className="font13">Nachricht</label>
-                  <textarea
-                    rows="4"
-                    cols="50"
-                    type="text"
-                    id="message"
-                    name="message"
-                    className="font20 extraBold"
-                  />
-                </Form>
+                {emailvalidation && !error && (
+                  <div className="error">{emailvalidation}</div>
+                )}
+                {error && (
+                  <div className="error">Es ist ein Fehler aufgetreten!</div>
+                )}
+                {success && (
+                  <div className="success">
+                    Ihre Nachricht wurde erfolgreich versandt!
+                  </div>
+                )}
+                <label className="font13">
+                  Name (Person oder Unternehmen):
+                </label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Betreff:</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="font20 extraBold"
+                />
+                <label className="font13">Nachricht</label>
+                <textarea
+                  rows="4"
+                  cols="50"
+                  type="text"
+                  id="message"
+                  name="message"
+                  className="font20 extraBold"
+                />
+
                 <SumbitWrapper className="flex">
                   <ButtonInput
                     type="submit"
@@ -114,6 +156,7 @@ export default function Contact() {
                       height: "430px",
                       width: "400px",
                       marginLeft: "100px",
+                      contain: "content",
 
                       borderRadius: "8px",
                     }}
@@ -137,31 +180,12 @@ const HeaderInfo = styled.div`
     text-align: center;
   }
 `;
-const Form = styled.form`
-  padding: 70px 0 30px 0;
-  input,
-  textarea {
-    width: 100%;
-    background-color: transparent;
-    border: 0px;
-    outline: none;
-    box-shadow: none;
-    border-bottom: 1px solid #707070;
-    height: 30px;
-    margin-bottom: 30px;
-  }
-  textarea {
-    min-height: 100px;
-  }
-  @media (max-width: 860px) {
-    padding: 30px 0;
-  }
-`;
+
 const ButtonInput = styled.input`
   border: 1px solid #7620ff;
   background-color: #7620ff;
   width: 100%;
-  padding: 15px;
+  height: 40px;
   outline: none;
   color: #fff;
   :hover {
@@ -173,11 +197,7 @@ const ButtonInput = styled.input`
     margin: 0 auto;
   }
 `;
-const ContactImgBox = styled.div`
-  max-width: 180px;
-  align-self: flex-end;
-  margin: 10px 30px 10px 0;
-`;
+
 const SumbitWrapper = styled.div`
   @media (max-width: 991px) {
     width: 100%;

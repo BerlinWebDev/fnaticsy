@@ -23,9 +23,6 @@ export default function Header() {
             Bedürfnisse und Ziele unserer Kunden abgestimmt ist, um nachhaltigen
             Erfolg zu gewährleisten
           </HeaderP>
-          <BtnWrapper>
-            <FullButton title="Get Started" />
-          </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>

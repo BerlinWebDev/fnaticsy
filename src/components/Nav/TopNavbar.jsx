@@ -10,7 +10,7 @@ import BurgerIcon from "../../assets/svg/BurgerIcon";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
-  const [sidebarOpen, toggleSidebar] = useState(false);
+  const [sidebaropen, toggleSidebar] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => setY(window.scrollY));
@@ -21,8 +21,8 @@ export default function TopNavbar() {
 
   return (
     <>
-      <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-      {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
+      <Sidebar sidebaropen={sidebaropen} toggleSidebar={toggleSidebar} />
+      {sidebaropen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper
         className="flexCenter animate whiteBg"
         style={y > 100 ? { height: "60px" } : { height: "80px" }}
@@ -36,7 +36,7 @@ export default function TopNavbar() {
           </Link>
           <BurderWrapper
             className="pointer"
-            onClick={() => toggleSidebar(!sidebarOpen)}
+            onClick={() => toggleSidebar(!sidebaropen)}
           >
             <BurgerIcon />
           </BurderWrapper>
@@ -74,7 +74,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Projects
+                Projekte
               </Link>
             </li>
             <li className="semiBold font15 pointer">
@@ -86,26 +86,10 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Contact
+                Kontakt
               </Link>
             </li>
           </UlWrapper>
-          <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
-              <a href="/" style={{ padding: "10px 30px 10px 0" }}>
-                Log in
-              </a>
-            </li>
-            <li className="semiBold font15 pointer flexCenter">
-              <a
-                href="/"
-                className="radius8 lightBg"
-                style={{ padding: "10px 15px" }}
-              >
-                Get Started
-              </a>
-            </li>
-          </UlWrapperRight>
         </NavInner>
       </Wrapper>
     </>
