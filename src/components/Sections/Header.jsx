@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import FullButton from "../Buttons/FullButton";
 import Human from "../../assets/img/hero.png";
 import QuotesIcon from "../../assets/svg/Quotes";
-import Dots from "../../assets/svg/Dots";
 
 export default function Header() {
   return (
@@ -52,9 +50,7 @@ export default function Header() {
               </p>
             </div>
           </QuoteWrapper>
-          <DotsWrapper>
-            <Dots />
-          </DotsWrapper>
+          <DotsWrapper></DotsWrapper>
         </ImageWrapper>
         <GreyDiv className="lightBg"></GreyDiv>
       </RightSide>

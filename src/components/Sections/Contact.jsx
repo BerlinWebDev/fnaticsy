@@ -145,12 +145,13 @@ export default function Contact() {
                 </SumbitWrapper>
               </form>
             </div>
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div style={{ width: "50%" }}>
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex justify-center">
+              <div style={{}}>
                 <div style={{ marginTop: "100px" }}>
                   <img
                     src={EmailLaptop}
                     alt="office"
+                    id="contactImg"
                     className="radius6"
                     style={{
                       height: "430px",

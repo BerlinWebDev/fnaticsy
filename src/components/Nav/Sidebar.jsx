@@ -63,37 +63,10 @@ export default function Sidebar({ sidebaropen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Projects
+            Projekte
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebaropen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Blog
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebaropen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="pricing"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Pricing
-          </Link>
-        </li>
+
         <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebaropen)}
@@ -105,28 +78,8 @@ export default function Sidebar({ sidebaropen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Contact
+            Kontakt
           </Link>
-        </li>
-      </UlStyle>
-      <UlStyle className="flexSpaceCenter">
-        <li className="semiBold font15 pointer">
-          <a
-            href="/"
-            style={{ padding: "10px 30px 10px 0" }}
-            className="whiteColor"
-          >
-            Log in
-          </a>
-        </li>
-        <li className="semiBold font15 pointer flexCenter">
-          <a
-            href="/"
-            className="radius8 lightBg"
-            style={{ padding: "10px 15px" }}
-          >
-            Get Started
-          </a>
         </li>
       </UlStyle>
     </Wrapper>

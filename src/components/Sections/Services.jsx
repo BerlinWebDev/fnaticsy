@@ -57,9 +57,13 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">Ziele & Vision</h4>
-                <h2 className="font40 extraBold">Ein paar Worte über uns..</h2>
-                <p className="font12">
+                <h2
+                  className="font40 extraBold"
+                  style={{ "margin-top": "50px" }}
+                >
+                  Ein paar Worte über uns..
+                </h2>
+                <p className="font12" style={{ "margin-bottom": "80px" }}>
                   Unsere digitale Agentur steht für innovative Lösungen und
                   herausragende Kreativität. Wir helfen Unternehmen, ihre
                   Online-Präsenz zu maximieren und ihre Zielgruppen effektiv zu
@@ -131,7 +135,7 @@ const Advertising = styled.div`
     padding: 100px 0 40px 0;
   }
   @media (max-width: 860px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0 0 30px 0;
     margin: 80px 0 0px 0;
   }

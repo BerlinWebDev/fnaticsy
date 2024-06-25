@@ -11,7 +11,7 @@ import BurgerIcon from "../../assets/svg/BurgerIcon";
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
   const [sidebaropen, toggleSidebar] = useState(false);
-
+  console.log(y);
   useEffect(() => {
     window.addEventListener("scroll", () => setY(window.scrollY));
     return () => {
@@ -48,7 +48,7 @@ export default function TopNavbar() {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-60}
               >
                 Home
               </Link>
@@ -60,7 +60,7 @@ export default function TopNavbar() {
                 to="services"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-60}
               >
                 Services
               </Link>
@@ -72,7 +72,7 @@ export default function TopNavbar() {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={110}
               >
                 Projekte
               </Link>
@@ -84,7 +84,7 @@ export default function TopNavbar() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-460}
               >
                 Kontakt
               </Link>
@@ -120,11 +120,6 @@ const BurderWrapper = styled.button`
 `;
 const UlWrapper = styled.ul`
   display: flex;
-  @media (max-width: 760px) {
-    display: none;
-  }
-`;
-const UlWrapperRight = styled.ul`
   @media (max-width: 760px) {
     display: none;
   }
