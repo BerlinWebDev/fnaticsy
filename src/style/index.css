@@ -158,6 +158,15 @@ body {
   font-weight: 800 !important;
 }
 
+.svgStyle {
+  @media (max-width: 860px) {
+    svg {
+      heigth: 39.58px;
+      width: 39.581px;
+    }
+  }
+}
+
 /* HELLPERS */
 .textCenter {
   text-align: center;
