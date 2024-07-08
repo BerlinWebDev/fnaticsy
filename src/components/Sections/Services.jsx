@@ -116,6 +116,7 @@ const ServiceBoxWrapper = styled.div`
   width: 33%;
   margin-right: 5%;
   padding: 80px 0;
+  text-align: center;
   @media (max-width: 860px) {
     width: 100%;
     text-align: center;
