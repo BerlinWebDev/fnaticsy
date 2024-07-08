@@ -35,7 +35,7 @@ export default function TopNavbar() {
             </h1>
           </Link>
           <BurderWrapper
-            className="pointer"
+            className="pointer textEnd"
             onClick={() => toggleSidebar(!sidebaropen)}
           >
             <BurgerIcon />
@@ -72,7 +72,7 @@ export default function TopNavbar() {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={110}
+                offset={-60}
               >
                 Projekte
               </Link>
@@ -84,7 +84,7 @@ export default function TopNavbar() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-460}
+                offset={-60}
               >
                 Kontakt
               </Link>

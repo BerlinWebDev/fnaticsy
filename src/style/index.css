@@ -162,6 +162,9 @@ body {
 .textCenter {
   text-align: center;
 }
+.textEnd {
+  text-align: end;
+}
 .animate {
   transition: 0.3s ease;
 }

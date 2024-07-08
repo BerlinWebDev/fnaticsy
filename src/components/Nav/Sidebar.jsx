@@ -17,14 +17,14 @@ export default function Sidebar({ sidebaropen, toggleSidebar }) {
         </div>
         <CloseBtn
           onClick={() => toggleSidebar(!sidebaropen)}
-          className="animate pointer"
+          className="animate pointer textEnd"
         >
           <CloseIcon />
         </CloseBtn>
       </SidebarHeader>
 
       <UlStyle className="flexNullCenter flexColumn">
-        <li className="semiBold font15 pointer">
+        <li className="semiBold font25 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
@@ -38,7 +38,7 @@ export default function Sidebar({ sidebaropen, toggleSidebar }) {
             Home
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
+        <li className="semiBold font25 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
@@ -52,7 +52,7 @@ export default function Sidebar({ sidebaropen, toggleSidebar }) {
             Services
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
+        <li className="semiBold font25 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
@@ -67,7 +67,7 @@ export default function Sidebar({ sidebaropen, toggleSidebar }) {
           </Link>
         </li>
 
-        <li className="semiBold font15 pointer">
+        <li className="semiBold font25 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebaropen)}
             activeClass="active"
