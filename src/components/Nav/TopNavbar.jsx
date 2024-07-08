@@ -11,7 +11,6 @@ import BurgerIcon from "../../assets/svg/BurgerIcon";
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
   const [sidebaropen, toggleSidebar] = useState(false);
-  console.log(y);
   useEffect(() => {
     window.addEventListener("scroll", () => setY(window.scrollY));
     return () => {
