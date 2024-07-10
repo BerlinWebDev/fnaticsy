@@ -8,7 +8,7 @@ import ProjectDigitalMedia from "../../assets/img/projects/digitalmedia.png";
 import ProjectGamehub from "../../assets/img/projects/gamehub.png";
 import ProjectNetflix from "../../assets/img/projects/netflix.png";
 import ProjectTagesmieten from "../../assets/img/projects/tagesmieten.png";
-import ProjectImg6 from "../../assets/img/projects/6.png";
+import ProjectTyler from "../../assets/img/projects/tyler.png";
 
 export default function Projects() {
   return (
@@ -29,7 +29,7 @@ export default function Projects() {
                 img={ProjectLoso}
                 title="Loso - App Website"
                 text="Die Seite Loso ist eine moderne, saubere und responsive Website. Sie bietet detaillierte Informationen über die Agentur, ihre Dienstleistungen und ihre Vorteile. Die Seite ist in verschiedene Abschnitte unterteilt, wie “Über uns”, “Warum wir?”, “Funktionen” und “Screens”, die die Hauptmerkmale und Vorzüge der Agentur präsentieren. Testimonials von zufriedenen Kunden sowie Download-Links sind ebenfalls verfügbar, um das Vertrauen der Besucher zu stärken und die Benutzerfreundlichkeit zu erhöhen. Hierbei wurde die Seite auf Rücksicht des Kunden inhaltlich geändert."
-                action={() => window.open("https://www.google.de", '_blank')} //TODO
+                action={() => window.open("https://loso.ihremanufaktur.de", '_blank')}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -37,7 +37,7 @@ export default function Projects() {
                 img={ProjectDigitalMedia}
                 title="Digital Media"
                 text="Präsenz einer beispielhaften Agency Agentur mit besonderen Fokus auf die Präsentation der Dienstleistungen und der Teammitglieder. Die Seite ist in verschiedene Abschnitte unterteilt, die die Hauptmerkmale und Vorzüge der Agentur präsentieren. Testimonials von zufriedenen Kunden sowie Download-Links sind ebenfalls verfügbar, um das Vertrauen der Besucher zu stärken und die Benutzerfreundlichkeit zu erhöhen."
-                action={() => alert("clicked")} //TODO
+                action={() => window.open("https://digitalmedia-chi.vercel.app/", '_blank')}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -69,10 +69,10 @@ export default function Projects() {
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectImg6}
-                title="Awesome Project"
-                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")} //TODO
+                img={ProjectTyler}
+                title="Persönliche Portfolio Seite"
+                text="" //TODO
+                action={() => window.open("https://portfolio-tyler-r35n.vercel.app/", '_blank')}
               />
             </div>
           </div>
