@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+
 // Assets
 import LogoImg from "../../assets/svg/Logo";
 
@@ -36,12 +37,22 @@ export default function Contact() {
               <span className="purpleColor font13">Fanatic</span> All Right
               Reserved
             </StyleP>
+            <Link
+                className="whiteColor animate pointer font13"
+                to="/impressum"
+            >
+              Impressum
+            </Link>
+            <Link
+                className="whiteColor animate pointer font13"
+                to="/datenschutz"
+            >
+              Datenschutz
+            </Link>
 
             <Link
               className="whiteColor animate pointer font13"
               to="home"
-              smooth={true}
-              offset={-80}
             >
               Zum Anfang
             </Link>

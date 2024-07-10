@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 // Screens
 import Landing from "./screens/Landing.jsx";
 import Impressum from "./components/Sections/Impressum.jsx";
+import Datenschutz from "./components/Sections/Datenschutz";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       </Helmet>
       <Routes>
         <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
         <Route path="/" element={<Landing />} />
       </Routes>
     </>

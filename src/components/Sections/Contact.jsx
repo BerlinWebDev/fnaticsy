@@ -147,7 +147,7 @@ export default function Contact() {
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex justify-center">
               <div style={{}}>
-                <div style={{ marginTop: "100px" }}>
+                <div>
                   <img
                     src={EmailLaptop}
                     alt="office"
