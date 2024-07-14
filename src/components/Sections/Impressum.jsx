@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import LogoIcon from "../../assets/svg/Logo";
 import styled from "styled-components";
+import Footer from './Footer'
 
 const Impressum = () => {
   return (<>
@@ -9,7 +10,7 @@ const Impressum = () => {
         className="flexCenter animate whiteBg"
     >
       <NavInner className="container flexSpaceCenter">
-        <Link className="pointer flexNullCenter" to="home" smooth={true}>
+        <Link className="pointer flexNullCenter" to="/" smooth={true}>
           <LogoIcon />
           <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
             fanatic
@@ -25,9 +26,9 @@ const Impressum = () => {
         </UlWrapper>
       </NavInner>
     </Wrapper>
-    <WrapperImpressum id="datenschutz" className="container flexSpaceCenter">
+    <WrapperImpressum id="datenschutz" className="container">
       <div>
-        <h1 className="extraBold font60">Impressum</h1>
+        <h1 className="extraBold" style={{fontSize:'3vh'}}>Impressum</h1>
         Serkan Altin von ihre Manufaktur.de<br/>
 
         Programmierung von Webauftritten<br/>
@@ -46,16 +47,25 @@ const Impressum = () => {
         Ihre Manufaktur
       </div>
     </WrapperImpressum>
+        <FooterBottom style={{bottom: "0"}} >
+        <Footer />
+        </FooterBottom>
   </>
 );
 }
 const WrapperImpressum = styled.section`
   margin-top: 110px;
-  width: 100%;
+
   min-height: 460px;
+  margin-bottom: 150px;
   @media (max-width: 960px) {
-    flex-direction: column;
+   
+
   }
+`;
+
+const FooterBottom = styled.section`
+  position: fixed; bottom: 0; width: 100%;
 `;
 
 const Wrapper = styled.nav`

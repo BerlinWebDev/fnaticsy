@@ -33,9 +33,9 @@ const Datenschutz = () => {
         </UlWrapper>
       </NavInner>
     </Wrapper>
-        <WrapperDatenschutz id="datenschutz" className="container flexSpaceCenter">
-            <div>
-              <h1 className="extraBold font60">DATENSCHUTZERKLÄRUNG</h1>
+        <WrapperDatenschutz id="datenschutz" className="container">
+
+              <h1 className="extraBold" style={{fontSize:'3vh'}}>DATENSCHUTZERKLÄRUNG</h1>
 
               Allgemeine Hinweise
               Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
@@ -190,8 +190,11 @@ const Datenschutz = () => {
 
               Weitere Informationen zu Google Web Fonts finden Sie unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google: https://policies.google.com/privacy?hl=de.
 
-            </div>
+
         </WrapperDatenschutz>
+        <FooterBottom>
+          <Footer />
+        </FooterBottom>
   </>
     );
     }
@@ -199,8 +202,11 @@ const WrapperDatenschutz = styled.section`
   margin-top: 110px;
   width: 100%;
   min-height: 460px;
+  margin-bottom: 150px;
   @media (max-width: 960px) {
+    font-size: 2vh;
     flex-direction: column;
+    margin-bottom: 350px;
   }
 `;
 
@@ -222,6 +228,10 @@ const WrapperDatenschutz = styled.section`
       display: none;
     }
     `;
+
+const FooterBottom = styled.section`
+  position: fixed; bottom: 0; width: 100%;
+`;
 
 
 export default Datenschutz;
