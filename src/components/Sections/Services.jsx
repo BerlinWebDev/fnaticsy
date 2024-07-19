@@ -67,9 +67,9 @@ export default function Services() {
                   Unsere digitale Agentur steht für innovative Lösungen und
                   herausragende Kreativität. Wir helfen Unternehmen, ihre
                   Online-Präsenz zu maximieren und ihre Zielgruppen effektiv zu
-                  erreichen. Mit unserem erfahrenen Team aus Designern,
-                  Entwicklern und Marketingexperten setzen wir maßgeschneiderte
-                  Strategien um, die zu messbaren Ergebnissen führen. Vertrauen
+                  erreichen. Mit unserem erfahrenen Team aus Designern und
+                  Entwicklern setzen wir maßgeschneiderte
+                  Strategien um. Vertrauen
                   Sie auf unsere Expertise und lassen Sie uns gemeinsam Ihre
                   digitalen Ziele verwirklichen. Erleben Sie, wie wir Ihre
                   Vision in die digitale Realität umsetzen und Ihren Erfolg
