@@ -71,7 +71,7 @@ export default function Projects() {
               <ProjectBox
                 img={ProjectTyler}
                 title="Persönliche Portfolio Seite"
-                text="" //TODO
+                text="Eine digitale Portfolio-Seite bietet Kreativen und Fachleuten eine Plattform, um ihre Arbeiten und Projekte ansprechend zu präsentieren. Sie erleichtert potenziellen Kunden und Arbeitgebern den Zugang zu den besten Arbeiten, fördert die persönliche Marke und kann zur Vernetzung und neuen Geschäftsmöglichkeiten führen. Perfekt für Designer, Fotografen und Künstler."
                 action={() => window.open("https://portfolio-tyler-r35n.vercel.app/", '_blank')}
               />
             </div>
