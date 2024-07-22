@@ -9,6 +9,9 @@ import ProjectGamehub from "../../assets/img/projects/gamehub.png";
 import ProjectNetflix from "../../assets/img/projects/netflix.png";
 import ProjectTagesmieten from "../../assets/img/projects/tagesmieten.png";
 import ProjectTyler from "../../assets/img/projects/tyler.png";
+import ProjektHiking from "../../assets/img/projects/ProjektHiking.png";
+
+
 
 export default function Projects() {
   return (
@@ -69,10 +72,10 @@ export default function Projects() {
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
-                img={ProjectTyler}
-                title="Persönliche Portfolio Seite"
-                text="Eine digitale Portfolio-Seite bietet Kreativen und Fachleuten eine Plattform, um ihre Arbeiten und Projekte ansprechend zu präsentieren. Sie erleichtert potenziellen Kunden und Arbeitgebern den Zugang zu den besten Arbeiten, fördert die persönliche Marke und kann zur Vernetzung und neuen Geschäftsmöglichkeiten führen. Perfekt für Designer, Fotografen und Künstler."
-                action={() => window.open("https://portfolio-tyler-r35n.vercel.app/", '_blank')}
+                img={ProjektHiking}
+                title="App Landing Page"
+                text="Die Landing Page für die App präsentiert ein modernes, benutzerfreundliches Design, das die Hauptfunktionen der App hervorhebt. Klare Call-to-Actions, überzeugende Benutzerbewertungen und visuell ansprechende Grafiken laden den Besucher ein, die App herunterzuladen. Optimiert für mobile Geräte bietet die Seite ein nahtloses Erlebnis, das Interesse weckt und Vertrauen schafft."
+                action={() => window.open("https://app-landing-page-wine.vercel.app/", '_blank')}
               />
             </div>
           </div>
