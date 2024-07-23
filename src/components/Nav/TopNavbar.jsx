@@ -30,7 +30,7 @@ export default function TopNavbar() {
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              fanatic
+              Nemdo
             </h1>
           </Link>
           <BurderWrapper
@@ -83,7 +83,7 @@ export default function TopNavbar() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-60}
+                offset={-50}
               >
                 Kontakt
               </Link>

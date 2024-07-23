@@ -63,7 +63,7 @@ export default function Services() {
                 >
                   Ein paar Worte über uns..
                 </h2>
-                <p className="font12" style={{ "marginBottom": "80px" }}>
+                <p className="font15" style={{ "marginBottom": "80px" }}>
                   Unsere digitale Agentur steht für innovative Lösungen und
                   herausragende Kreativität. Wir helfen Unternehmen, ihre
                   Online-Präsenz zu maximieren und ihre Zielgruppen effektiv zu

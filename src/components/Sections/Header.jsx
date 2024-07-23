@@ -10,7 +10,7 @@ export default function Header() {
       <LeftSide className="flexCenter">
         <div>
           <h1 className="extraBold font60">Wir sind eine Digitale Agentur.</h1>
-          <HeaderP className="font13 semiBold">
+          <HeaderP className="font14 semiBold">
             Als digitale Agentur sind wir darauf spezialisiert, maßgeschneiderte
             digitale Lösungen für unsere Kunden zu entwickeln. Unser
             Leistungsspektrum umfasst Webdesign, Content-Erstellung und die

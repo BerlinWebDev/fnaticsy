@@ -81,7 +81,7 @@ export default function Contact() {
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Kontaktieren Sie Uns Jetzt!</h1>
-            <p className="font13">
+            <p className="font15">
               Schicken Sie uns eine Nachricht und wir werden uns so schnell wie
               möglich bei Ihnen melden.
               <br />

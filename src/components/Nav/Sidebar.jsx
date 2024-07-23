@@ -12,7 +12,7 @@ export default function Sidebar({ sidebaropen, toggleSidebar }) {
         <div className="flexNullCenter">
           <LogoIcon />
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
+            Nemdo
           </h1>
         </div>
         <CloseBtn

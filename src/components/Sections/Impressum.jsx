@@ -13,7 +13,7 @@ const Impressum = () => {
         <Link className="pointer flexNullCenter" to="/" smooth={true}>
           <LogoIcon />
           <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-            fanatic
+            Nemdo
           </h1>
         </Link>
         <UlWrapper className="flexNullCenter">
@@ -29,14 +29,14 @@ const Impressum = () => {
     <WrapperImpressum id="datenschutz" className="container">
       <div>
         <h1 className="extraBold" style={{fontSize:'3vh'}}>Impressum</h1>
-        Serkan Altin von ihre Manufaktur.de<br/>
+        Serkan Altin von Nemdo.de<br/>
 
         Programmierung von Webauftritten<br/>
         Halemweg 44B<br/>
         13627 Berlin<br/>
 
-        E-Mail: anfrage@ihremanufaktur.de<br/>
-        IhreManufaktur.de<br/>
+        E-Mail: anfrage@Nemdo.de<br/>
+        Nemdo.de<br/>
         Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:<br/>
         https://ec.europa.eu/consumers/odr/.<br/>
         Unsere E-Mail-Adresse finden Sie oben im Impressum.<br/>
@@ -44,7 +44,6 @@ const Impressum = () => {
         Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
         teilzunehmen.<br/>
 
-        Ihre Manufaktur
       </div>
     </WrapperImpressum>
         <FooterBottom style={{bottom: "0"}} >
