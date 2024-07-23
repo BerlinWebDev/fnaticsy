@@ -89,6 +89,7 @@ export default function Projects() {
 }
 
 const Wrapper = styled.section`
+  padding-bottom: 100px;
   width: 100%;
 `;
 const HeaderInfo = styled.div`

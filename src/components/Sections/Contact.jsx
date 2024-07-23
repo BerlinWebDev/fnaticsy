@@ -88,7 +88,7 @@ export default function Contact() {
               Wir freuen uns darauf, von Ihnen zu hören!
             </p>
           </HeaderInfo>
-          <div className="row" style={{ paddingBottom: "30px" }}>
+          <div className="row" style={{ paddingBottom: "100px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <form ref={form} onSubmit={sendEmail}>
                 {emailvalidation && !error && (
