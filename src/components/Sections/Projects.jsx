@@ -32,7 +32,7 @@ export default function Projects() {
                 img={ProjectLoso}
                 title="Loso - App Website"
                 text="Die Seite Loso ist eine moderne, saubere und responsive Website. Sie bietet detaillierte Informationen über die Agentur, ihre Dienstleistungen und ihre Vorteile. Die Seite ist in verschiedene Abschnitte unterteilt, wie “Über uns”, “Warum wir?”, “Funktionen” und “Screens”, die die Hauptmerkmale und Vorzüge der Agentur präsentieren. Testimonials von zufriedenen Kunden sowie Download-Links sind ebenfalls verfügbar, um das Vertrauen der Besucher zu stärken und die Benutzerfreundlichkeit zu erhöhen. Hierbei wurde die Seite auf Rücksicht des Kunden inhaltlich geändert."
-                action={() => window.open("https://loso.ihremanufaktur.de", '_blank')}
+                action={() => window.open("https://loso-tau.vercel.app/", '_blank')}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
