@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 // Assets
 import LogoImg from "../../assets/svg/Logo";
+import Logo from "../../assets/img/Nemdo.png";
 
 export default function Contact() {
   const getCurrentYear = () => {
@@ -24,10 +25,15 @@ export default function Contact() {
               smooth={true}
               offset={-80}
             >
-              <LogoImg />
+              <img
+                  src={Logo}
+                  alt="Nemdo"
+                  width={25}
+                  height={25}
+              />
               <h1
-                className="font15 extraBold whiteColor"
-                style={{ marginLeft: "15px" }}
+                  className="font15 extraBold whiteColor"
+                  style={{marginLeft: "15px"}}
               >
                 Nemdo
               </h1>

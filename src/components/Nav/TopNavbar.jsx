@@ -6,7 +6,9 @@ import Sidebar from "../Nav/Sidebar";
 import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/svg/Logo";
+
 import BurgerIcon from "../../assets/svg/BurgerIcon";
+import Logo from "../../assets/img/Nemdo.png";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -28,14 +30,19 @@ export default function TopNavbar() {
       >
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            <LogoIcon />
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
+            <img
+                src={Logo}
+                alt="Nemdo"
+                width={25}
+                height={25}
+            />
+            <h1 style={{marginLeft: "15px" ,marginTop: "3px"}} className="font18 extraBold">
               Nemdo
             </h1>
           </Link>
           <BurderWrapper
-            className="pointer textEnd"
-            onClick={() => toggleSidebar(!sidebaropen)}
+              className="pointer textEnd"
+              onClick={() => toggleSidebar(!sidebaropen)}
           >
             <BurgerIcon />
           </BurderWrapper>
