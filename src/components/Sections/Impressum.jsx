@@ -81,9 +81,6 @@ const NavInner = styled.div`
     `;
 const UlWrapper = styled.ul`
     display: flex;
-    @media (max-width: 760px) {
-      display: none;
-    }
     `;
 
 

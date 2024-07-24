@@ -192,9 +192,9 @@ const Datenschutz = () => {
 
 
         </WrapperDatenschutz>
-        <FooterBottom>
+
           <Footer />
-        </FooterBottom>
+
   </>
     );
     }
@@ -202,11 +202,10 @@ const WrapperDatenschutz = styled.section`
   margin-top: 110px;
   width: 100%;
   min-height: 460px;
-  margin-bottom: 150px;
   @media (max-width: 960px) {
     font-size: 2vh;
     flex-direction: column;
-    margin-bottom: 350px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -224,14 +223,10 @@ const WrapperDatenschutz = styled.section`
     `;
     const UlWrapper = styled.ul`
     display: flex;
-    @media (max-width: 760px) {
-      display: none;
-    }
+
     `;
 
-const FooterBottom = styled.section`
-  position: fixed; bottom: 0; width: 100%;
-`;
+
 
 
 export default Datenschutz;
