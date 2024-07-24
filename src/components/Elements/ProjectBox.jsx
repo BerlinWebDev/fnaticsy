@@ -17,6 +17,7 @@ const Wrapper = styled.div`
   width: 100%;
   margin-top: 30px;
   img {
+    cursor: pointer;
     width: 100%;
     height: auto;
     margin: 20px 0;

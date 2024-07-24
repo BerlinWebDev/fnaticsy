@@ -21,7 +21,7 @@ export default function Contact() {
           >
             <Link
               className="flexCenter animate pointer"
-              to="home"
+              to="/"
               smooth={true}
               offset={-80}
             >
@@ -58,7 +58,7 @@ export default function Contact() {
 
             <Link
               className="whiteColor animate pointer font13"
-              to="home"
+              to="/"
             >
               Zum Anfang
             </Link>

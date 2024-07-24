@@ -3,13 +3,12 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 // Assets
-import ProjectLoso from "../../assets/img/projects/loso.png";
-import ProjectDigitalMedia from "../../assets/img/projects/digitalmedia.png";
-import ProjectGamehub from "../../assets/img/projects/gamehub.png";
-import ProjectNetflix from "../../assets/img/projects/netflix.png";
-import ProjectTagesmieten from "../../assets/img/projects/tagesmieten.png";
-import ProjectTyler from "../../assets/img/projects/tyler.png";
-import ProjektHiking from "../../assets/img/projects/ProjektHiking.png";
+import ProjectLoso from "../../assets/img/projects/loso-min.png";
+import ProjectDigitalMedia from "../../assets/img/projects/digitalmedia-min.png";
+import ProjectGamehub from "../../assets/img/projects/gamehub-min.png";
+import ProjectNetflix from "../../assets/img/projects/netflix-min.png";
+import ProjectTagesmieten from "../../assets/img/projects/tagesmieten-min.png";
+import ProjektHiking from "../../assets/img/projects/ProjektHiking-min.png";
 
 
 
