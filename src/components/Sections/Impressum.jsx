@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import LogoIcon from "../../assets/svg/Logo";
 import styled from "styled-components";
 import Footer from './Footer'
+import Logo from "../../assets/img/Nemdo.png";
 
 const Impressum = () => {
   return (<>
@@ -11,7 +11,12 @@ const Impressum = () => {
     >
       <NavInner className="container flexSpaceCenter">
         <Link className="pointer flexNullCenter" to="/" smooth={true}>
-          <LogoIcon />
+          <img
+              src={Logo}
+              alt="Nemdo"
+              width={25}
+              height={25}
+          />
           <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
             Nemdo
           </h1>
